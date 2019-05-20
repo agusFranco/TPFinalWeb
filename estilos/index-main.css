@@ -1,0 +1,46 @@
+section {
+  margin: 2em;
+}
+
+.slider-section {
+  margin: 2em;
+  /* width: 90%; */
+}
+
+.slider-img {
+  height: auto;
+}
+
+.step-section {
+  width: 100%;
+}
+
+.step-section article {
+  display: inline-block;
+  width: 33%;
+}
+
+.starred-section {
+  width: 100%;
+}
+
+.starred-events-section article {
+  display: inline-block;
+  width: 33%;
+}
+
+.starred-events-title {
+  text-align: center;
+}
+
+.payment-types-section {
+  width: 100%;
+}
+
+.payment-types-section article {
+  display: inline-block;
+}
+
+.payment-types-title {
+  text-align: center;
+}
