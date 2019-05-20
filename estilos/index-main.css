@@ -1,46 +1,84 @@
-section {
-  margin: 2em;
-}
-
 .slider-section {
-  margin: 2em;
-  /* width: 90%; */
 }
 
 .slider-img {
-  height: auto;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .step-section {
-  width: 100%;
+  margin: 3%;
+  padding: 3%;
 }
 
 .step-section article {
   display: inline-block;
+  text-align: center;
   width: 33%;
 }
 
-.starred-section {
-  width: 100%;
+.payment-types-section {
+  margin: 3%;
+  padding: 3%;
 }
 
-.starred-events-section article {
+.payment-types-section article {
   display: inline-block;
+  text-align: center;
   width: 33%;
+}
+
+.payment-types-title {
+  text-align: center;
+}
+
+.starred-events-section {
+  margin: 3%;
 }
 
 .starred-events-title {
   text-align: center;
 }
 
-.payment-types-section {
-  width: 100%;
+.starred-events-section {
+  text-align: center;
 }
 
-.payment-types-section article {
+.event-card {
+  margin: 2.5%;
+  width: 25%;
+  border: 1px solid rgb(88, 79, 79);
+  position: relative;
+  box-sizing: border-box;
   display: inline-block;
 }
 
-.payment-types-title {
-  text-align: center;
+.event-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.event-card-container {
+  position: relative;
+  height: 100px;
+}
+
+.event-card-date {
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  width: 50%;
+}
+
+.event-card-date-number {
+  display: block;
+}
+.event-card-content {
+  margin-right: 3%;
+  position: absolute;
+  top: 20%;
+  width: 50%;
+  right: 0;
+  text-align: right;
 }
