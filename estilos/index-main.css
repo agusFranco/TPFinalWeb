@@ -1,5 +1,4 @@
-.slider-section {
-}
+@import "./flex-styles.css";
 
 .slider-img {
   height: 300px;
@@ -32,8 +31,8 @@
 .payment-types-title {
   text-align: center;
 }
-
 .starred-events-section {
+  text-align: center;
   margin: 3%;
 }
 
@@ -41,44 +40,41 @@
   text-align: center;
 }
 
-.starred-events-section {
-  text-align: center;
-}
-
 .event-card {
-  margin: 2.5%;
-  width: 25%;
+  margin: 2.0%;
+  padding: 1%;
+  width: 300px;
   border: 1px solid rgb(88, 79, 79);
-  position: relative;
   box-sizing: border-box;
-  display: inline-block;
 }
 
 .event-img {
   width: 100%;
   object-fit: cover;
-}
-
-.event-card-container {
-  position: relative;
-  height: 100px;
+  opacity: 0.7;
 }
 
 .event-card-date {
-  margin: 0;
-  position: absolute;
-  top: 20%;
-  width: 50%;
+  width: 30%;
 }
 
 .event-card-date-number {
   display: block;
 }
+
 .event-card-content {
-  margin-right: 3%;
-  position: absolute;
-  top: 20%;
-  width: 50%;
-  right: 0;
+  width: 70%;
   text-align: right;
+}
+.event-card-subtitle {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.event-card-button {
+  background-color: #28a745;
+  color: white;
+  padding: 7px;
+  text-decoration: none;
+  border-radius: 10px;
 }
