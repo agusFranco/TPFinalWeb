@@ -1,6 +1,10 @@
 @import "./reset.css";
 @import "./flex-styles.css";
 
+body {
+  font-family: verdana, sans-serif;
+}
+
 main {
   background-color: #f7f7f7;
 }
@@ -17,7 +21,6 @@ main {
 }
 
 .step-article {
-  
 }
 
 .starred-events-section {
