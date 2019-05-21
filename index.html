@@ -7,13 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trabajo Practico</title>
 
-    <link rel="stylesheet" href="estilos/index-main.css">
+    <link rel="stylesheet" href="estilos/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header>
+    <header class="contenedor">
+        <div class="logo"></div>
+        <div class="lista">
+            <datalist id="eventos">
+                <option value="Opcion1"></option>
+                <option value="Opcion2"></option>
+                <option value="Opcion3"></option>
+            </datalist>
+            <input type="text" name="eventos" list="eventos">
+        </div>
 
+        <div class="carrito">
+            <div class="contador">
+                <p>10</p>
+            </div>
+        </div>
     </header>
     <main>
         <section class="slider-section">

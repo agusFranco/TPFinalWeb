@@ -1,9 +1,6 @@
 @import "./reset.css";
 @import "./flex-styles.css";
-
-body {
-  font-family: verdana, sans-serif;
-}
+@import "./header.css";
 
 main {
   background-color: #f7f7f7;
@@ -66,7 +63,7 @@ main {
 .event-card-button {
   background-color: #28a745;
   color: white;
-  padding: 7px;
+  padding: 5px 32px;
   text-decoration: none;
   border-radius: 10px;
 }

@@ -1,0 +1,47 @@
+@import "./reset.css";
+@import "./flex-styles.css";
+@import "./header.css";
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.contenedor h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.ubicacion h2 {
+  text-align: center;
+}
+
+.contenedor article {
+  width: 50%;
+}
+.contenedor {
+  display: flex;
+}
+main input,
+textarea {
+  width: 80%;
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+}
+main textarea {
+  padding: 30px;
+  width: 74%;
+}
+button {
+  position: relative;
+  left: 450px;
+  border-radius: 2px;
+  padding: 5px;
+  border-style: none;
+  background-color: #07367c;
+  color: #fff;
+}
+main p {
+  padding: 15px;
+}
