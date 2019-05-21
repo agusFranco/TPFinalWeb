@@ -17,20 +17,6 @@
   width: 33%;
 }
 
-.payment-types-section {
-  margin: 3%;
-  padding: 3%;
-}
-
-.payment-types-section article {
-  display: inline-block;
-  text-align: center;
-  width: 33%;
-}
-
-.payment-types-title {
-  text-align: center;
-}
 .starred-events-section {
   text-align: center;
   margin: 3%;
@@ -41,7 +27,7 @@
 }
 
 .event-card {
-  margin: 2.0%;
+  margin: 2%;
   padding: 1%;
   width: 300px;
   border: 1px solid rgb(88, 79, 79);
@@ -77,4 +63,25 @@
   padding: 7px;
   text-decoration: none;
   border-radius: 10px;
+}
+
+.payment-types-section {
+  margin: 3%;
+  padding: 3%;
+}
+
+.payment-types-title {
+  text-align: center;
+}
+
+.payment-type-card {
+  margin: 2%;
+  padding: 1%;
+  width: 50px;
+}
+
+.payment-type-card-img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.7;
 }
