@@ -1,9 +1,10 @@
 @import "./reset.css";
 @import "./flex-styles.css";
 @import "./header.css";
+@import "./event-card.css";
 
 main {
-  background-color: #f7f7f7;
+  background-color: #ededed;
 }
 
 .slider-img {
@@ -24,48 +25,6 @@ main {
 
 .starred-events-title {
   text-align: center;
-}
-
-.event-card {
-  margin: 2%;
-  padding: 1%;
-  width: 300px;
-  border: 1px solid rgb(88, 79, 79);
-  box-sizing: border-box;
-  background-color: white;
-  border-radius: 5px;
-}
-
-.event-img {
-  width: 100%;
-  object-fit: cover;
-  opacity: 0.7;
-  border-radius: 5px;
-}
-
-.event-card-date {
-  width: 30%;
-}
-
-.event-card-date-number {
-  display: block;
-}
-
-.event-card-content {
-  width: 70%;
-  text-align: right;
-}
-.event-card-subtitle {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.event-card-button {
-  background-color: #28a745;
-  color: white;
-  padding: 5px 32px;
-  text-decoration: none;
-  border-radius: 10px;
 }
 
 .payment-types-section {

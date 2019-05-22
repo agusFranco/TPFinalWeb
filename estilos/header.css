@@ -1,54 +1,33 @@
 header {
   background-color: #979b93;
 }
-.contenedor {
-  display: flex;
-  justify-content: space-between;
-}
 
-.logo,
-.carrito {
-  width: 200px;
-  height: 100px;
-}
-
-.lista {
-  flex-grow: 2;
-}
-
-.logo {
-  background-image: url(../img/logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.carrito {
-  background-image: url(../img/carrito.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.contador {
-  background-color: yellow;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  position: relative;
-  top: 5px;
-  left: 120px;
-}
-
-header p {
-  font-family: arial, sans-serif;
-  font-size: 25px;
-  margin: auto;
-  padding: 11px;
-}
-
-header input {
+.buscador {
   width: 50%;
-  margin-top: 40px;
-  margin-left: 200px;
+}
+
+.buscador datalist {
+  width: 100%;
+}
+
+datalist option {
+  width: 100%;
+}
+
+.buscador input {
+  width: 100%;
+}
+
+.cart-logo {
+  position: relative;
+  margin-right: 5%;
+}
+
+.cart-counter {
+  position: absolute;
+  right: 0;
+  top: 6  0%;
+  padding: 5%;
+  border-radius: 100%;
+  background-color: yellow;
 }

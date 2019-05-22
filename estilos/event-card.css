@@ -1,0 +1,47 @@
+.event-card {
+    margin: 2%;  
+    width: 300px;
+    /* border: 1px solid rgb(88, 79, 79); */
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .event-card .event-img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    border-radius: 5px;
+  }
+  
+  .event-card .event-card-container {
+    padding: 1%;
+    height: 100px;
+  }
+  
+  .event-card .event-card-container .event-card-date {
+    width: 30%;
+  }
+  
+  .event-card .event-card-container .event-card-date .event-card-date-number {
+    display: block;
+  }
+  
+  .event-card .event-card-content {
+    padding: 5%;
+    width: 70%;
+    text-align: right;
+  }
+  
+  .event-card .event-card-content .event-card-subtitle {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .event-card .event-card-content .event-card-button {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 32px;
+    text-decoration: none;
+    border-radius: 10px;
+  }

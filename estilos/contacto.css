@@ -3,50 +3,55 @@
 @import "./header.css";
 
 main {
-  width: 80%;
   margin: auto;
+  background-color: #ededed;
 }
 
-.contenedor h2 {
-  font-size: 20px;
-  margin-top: 20px;
+h2 {
+  font-weight: normal;
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-bottom: 10px;
 }
-
-.ubicacion h2 {
+article {
+  border-radius: 5px;
+  width: 45%;
+}
+main input {
+  width: 90%;
+  margin-top: 30px;
+  margin-left: 5px;
+  padding: 5px;
+}
+main textarea {
+  margin-top: 30px;
+  width: 82%;
+  padding: 25px;
+  margin-left: 5px;
+}
+button {
+  background-color: #0f469e;
+  color: #fff;
+  border-style: none;
+  border-radius: 3px;
+  padding: 3px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  align-self: flex-start;
+  position: relative;
+  left: 362px;
+}
+main p {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+main section {
+  display: flex;
+  justify-content: space-around;
+}
+aside {
   text-align: center;
 }
-
-.contenedor article {
-  width: 50%;
-}
-
-.contenedor {
-  display: flex;
-}
-
-main input,
-textarea {
-  width: 80%;
-  display: block;
-  margin-top: 20px;
-  padding: 10px;
-}
-
-main textarea {
-  padding: 30px;
-  width: 74%;
-}
-
-button {
-  position: relative;
-  left: 450px;
-  border-radius: 2px;
-  padding: 5px;
-  border-style: none;
-  background-color: #07367c;
-  color: #fff;
-}
-
-main p {
-  padding: 15px;
+aside h2 {
+  margin-bottom: 30px;
 }
