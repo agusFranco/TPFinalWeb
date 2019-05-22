@@ -19,9 +19,11 @@ main {
 .contenedor article {
   width: 50%;
 }
+
 .contenedor {
   display: flex;
 }
+
 main input,
 textarea {
   width: 80%;
@@ -29,10 +31,12 @@ textarea {
   margin-top: 20px;
   padding: 10px;
 }
+
 main textarea {
   padding: 30px;
   width: 74%;
 }
+
 button {
   position: relative;
   left: 450px;
@@ -42,6 +46,7 @@ button {
   background-color: #07367c;
   color: #fff;
 }
+
 main p {
   padding: 15px;
 }
