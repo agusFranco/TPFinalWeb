@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import "./flex-styles.css";
 @import "./header.css";
+@import "./footer.css";
 @import "./event-card.css";
 
 main {
@@ -25,11 +26,6 @@ main {
 
 .starred-events-title {
   text-align: center;
-}
-
-.payment-types-section {
-  margin: 3%;
-  padding: 3%;
 }
 
 .payment-types-title {

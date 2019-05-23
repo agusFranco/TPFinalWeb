@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import "./flex-styles.css";
 @import "./header.css";
+@import "./footer.css";
 
 main {
   margin: auto;

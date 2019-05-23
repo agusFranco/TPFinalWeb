@@ -1,0 +1,16 @@
+.footer-column {
+  width: 250px;
+  border: 1px solid black;
+  margin: 1%;
+  text-align: center;
+}
+
+.footer-container {
+  height: 10%;
+  background-color: black;
+  color: white;
+}
+
+.footer-column ul li {
+ list-style: none;
+}
