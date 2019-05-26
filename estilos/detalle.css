@@ -1,0 +1,52 @@
+@import "./reset.css";
+@import "./flex-styles.css";
+@import "./header.css";
+@import "./footer.css";
+@import "./event-card.css";
+
+main section {
+  width: 90%;
+  margin: auto;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+main article {
+  background-color: #ccc;
+  padding: 10px;
+  width: 35%;
+  height: 400px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+main p {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+button {
+  background-color: #003a99;
+  color: #fff;
+  padding: 5px;
+  border-style: none;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 15px;
+}
+
+aside {
+  text-align: center;
+}
+
+img {
+  width: auto;
+}

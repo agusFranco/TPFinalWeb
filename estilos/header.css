@@ -1,20 +1,17 @@
 header {
-  background-color: #979b93;
+  background-color: #343a40;
+}
+
+.brand {
+  padding: 0.5%;
 }
 
 .buscador {
-  width: 40%;
+  width: 35%;
 }
 
-.buscador datalist {
-  width: 100%;
-}
-
-datalist option {
-  width: 100%;
-}
-
-.buscador input {
+.search-box {
+  height: 2em;
   width: 100%;
 }
 
@@ -30,4 +27,22 @@ datalist option {
   padding: 5%;
   border-radius: 100%;
   background-color: yellow;
+}
+
+nav {
+  font-size: 1em;
+}
+
+nav li {
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+  color: #fff;
 }

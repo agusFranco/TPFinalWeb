@@ -1,14 +1,13 @@
 .footer-column {
-  width: 250px;
-  border: 1px solid black;
+  width: 250px;  
   margin: 1%;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-container {
   height: 10%;
-  background-color: black;
-  color: white;
+  background-color: #343a40;
+  color: gray;
 }
 
 .footer-column ul li {

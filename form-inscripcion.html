@@ -6,21 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario de Inscripcion</title>
-    <link rel="stylesheet" href="estilos/footer.css">
-    <link rel="stylesheet" href="estilos/header.css">
-    <link rel="stylesheet" href="estilos/Formulario-de-Inscripcion.css">
-    <link rel="stylesheet" href="estilos/flex-styles.css">
+    <link rel="stylesheet" href="estilos/form-inscripcion.css">
 </head>
 
-<body>
-    <!--Header-->
+<body>    
     <header>
-        <div class="flex row between wrap">
-            <div class="flex middle center">
+        <div class="flex between wrap">
+            <div class="flex middle center brand">
                 <img src="img/logo.png">
             </div>
             <div class="flex middle center buscador">
-                <input type="text" name="eventos" list="eventos">
+                <input type="text" name="eventos" class="search-box" placeholder="Inicie su busqueda aqui..."
+                    list="eventos">
                 <datalist id="eventos">
                     <option value="Opcion1"></option>
                     <option value="Opcion2"></option>
@@ -32,6 +29,14 @@
                 <span class="cart-counter">45</span>
             </div>
         </div>
+        <nav class="flex center wrap">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Personalización de Invitacion</a></li>
+                <li><a href="form-inscripcion.html">Formulario de inscripción</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!--Main-->
@@ -65,7 +70,6 @@
                 <input type='image' name="botonparaenviar" src="img/menos.png" alt="image" width="20" height="20">
             </article>
         </section>
-
         <section class="flex row wrap between center section margen-izquierdo">
             <article>
                 <form action="#" method="get">
@@ -87,7 +91,6 @@
                 <input type='image' name="botonparaenviar" src="img/menos.png" alt="image" width="20" height="20">
             </article>
         </section>
-
         <section class="flex row wrap between center section margen-izquierdo">
             <article>
                 <form action="#" method="get">
@@ -110,42 +113,47 @@
             </article>
         </section>
         <section class="flex row middle between center">
-                <article class="margen-izquierdo"> 
-                        <input type='image' name="botonparaagregar" src="img/mas.png" alt="image" width="20" height="20">
-                </article>
-                <article class="espaciado-objetos">
-                    <h2>Agregar Persona</h2>
-                </article>
+            <article class="margen-izquierdo">
+                <input type='image' name="botonparaagregar" src="img/mas.png" alt="image" width="20" height="20">
+            </article>
+            <article class="espaciado-objetos">
+                <h2>Agregar Persona</h2>
+            </article>
         </section>
         <section class="flex row middle between center">
-                <article class="black-box margen-boxes"> 
-                    <h2 class=" tamaño-box1" >$000.-</h2>  
-                </article>
-                <article class="grey-box espaciado-objetos2">
-                    <h2 class="tamaño-box2">Inscribirse</h2>
-                </article>
+            <article class="black-box margen-boxes">
+                <h2 class=" tamaño-box1">$000.-</h2>
+            </article>
+            <article class="grey-box espaciado-objetos2">
+                <h2 class="tamaño-box2">Inscribirse</h2>
+            </article>
         </section>
         <div class="div-separador"></div>
     </main>
 
-    <!--Footer-->
     <footer>
         <section class="flex row wrap center middle footer-container">
             <article class="footer-column">
                 <ul>
-                    <li>
-                        Sanchez, Maximiliano
-                    </li>
-                    <li>
-                        Matto, Rodrigo
-                    </li>
-                    <li>
-                        Franco, Agustin
-                    </li>
+                    <li> Sanchez, Maximiliano </li>
+                    <li> Matto, Rodrigo </li>
+                    <li> Franco, Agustin </li>
                 </ul>
             </article>
-            <article class="footer-column">Columna 2</article>
-            <article class="footer-column">Columna 3</article>
+            <article class="footer-column">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Personalización de Invitacion</a></li>
+                    <li><a href="form-inscripcion.html">Formulario de inscripción</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <ul>
+                    <li> Instagram </li>
+                    <li> Facebook </li>                    
+                </ul>
+            </article>
         </section>
     </footer>
 </body>
