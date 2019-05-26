@@ -68,3 +68,11 @@ h2 {
   position: relative;
   margin-top: 3em;
 }
+
+.article {
+  position: relative;
+}
+
+form{
+  width: 150em;
+}
