@@ -1,0 +1,50 @@
+@import "./reset.css";
+@import "./flex-styles.css";
+@import "./header.css";
+@import "./footer.css";
+@import "./event-card.css";
+
+main {
+  background-color: #ededed;
+  height: 70%;
+}
+
+.table-section {
+  padding: 4%;
+}
+
+table {
+  margin-top: 2em;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.table-footer {
+    margin-top: 2em;
+}
+
+button.primary{
+    padding: 0.5%;
+    margin: 0.3%;    
+    background-color: #28a745;    
+    color: white;    
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+button.finish{
+    padding: 0.5%;
+    margin: 0.3%;    
+    background-color: #007bff;    
+    color: white;    
+    text-decoration: none;
+    border-radius: 10px;
+}

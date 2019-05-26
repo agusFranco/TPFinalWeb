@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SoftEvents - Resumen de Entradas Compradas</title>
+
+    <link rel="stylesheet" href="estilos/resumen-entradas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="flex between wrap">
+            <div class="flex middle center brand">
+                <img src="img/logo.png">
+            </div>
+            <div class="flex middle center buscador">
+                <input type="text" name="eventos" class="search-box" placeholder="Inicie su busqueda aqui..."
+                    list="eventos">
+                <datalist id="eventos">
+                    <option value="Opcion1"></option>
+                    <option value="Opcion2"></option>
+                    <option value="Opcion3"></option>
+                </datalist>
+            </div>
+            <div class="flex middle center cart-logo">
+                <img src="img/carrito.png">
+                <span class="cart-counter">45</span>
+            </div>
+        </div>
+        <nav class="flex center wrap">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Personalización de Invitacion</a></li>
+                <li><a href="form-inscripcion.html">Formulario de inscripción</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="flex column table-section">
+            <article class="flex column center">
+                <h2 class="flex left table-title">RESUMEN DE ENTRADAS COMPRADAS</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Titulo</th>
+                            <th>Estado</th>
+                            <th>Precio Unitario</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span> 20-06-2019 </span></td>
+                            <td><span> Cena Privada </span></td>
+                            <td><span> <button> Personalizar </button> </span></td>
+                            <td><span> $200.00 </span></td>
+                            <td><span> 2 </span></td>
+                            <td><span> $400.00 </span></td>
+                        </tr>
+                        <tr>
+                            <td><span> 20-06-2019 </span></td>
+                            <td><span> Cena Privada </span></td>
+                            <td><span> <button> Personalizar </button> </span></td>
+                            <td><span> $200.00 </span></td>
+                            <td><span> 2 </span></td>
+                            <td><span> $400.00 </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="flex right table-footer">
+                    <button class="primary"> <i class="fa fa-ticket"></i> Seguir Comprando</button>
+                    <button class="finish"> <i class="fa fa-ticket"></i> FINALIZAR COMPRA</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="flex row wrap center footer-container">
+            <article class="footer-column">
+                <ul>
+                    <li> Sanchez, Maximiliano </li>
+                    <li> Matto, Rodrigo </li>
+                    <li> Franco, Agustin </li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Personalización de Invitacion</a></li>
+                    <li><a href="form-inscripcion.html">Formulario de inscripción</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <ul>
+                    <li> Instagram </li>
+                    <li> Facebook </li>
+                </ul>
+            </article>
+        </section>
+    </footer>
+</body>
+
+</html>
