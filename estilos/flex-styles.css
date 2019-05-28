@@ -28,6 +28,9 @@
 
 .flex.right {
   justify-content: flex-end;
+  align-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
 }
 
 .flex.middle {
@@ -38,4 +41,32 @@
 
 .flex.grow {
   flex-grow: 3;
+}
+
+.flex.w-30 {
+  width: 30%;
+}
+
+.flex.w-100 {
+  width: 100%;
+}
+
+.flex.w-50 {
+  width: 48%;
+}
+
+.flex.margin{
+  margin: 1%;
+}
+
+.flex.p-1{
+  padding: 0.5em;
+}
+
+.flex.m-2{
+  margin: 1.5em;
+}
+
+.flex.p-2{
+  padding: 2em;
 }

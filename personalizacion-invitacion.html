@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SoftEvents | Personalizacion de Invitacion</title>
+
+    <link rel="stylesheet" href="estilos/personalizacion-invitacion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="flex between wrap">
+            <div class="flex middle center brand">
+                <img src="img/logo.png">
+            </div>
+            <div class="flex middle center buscador">
+                <input type="text" name="eventos" class="search-box" placeholder="Inicie su busqueda aqui..."
+                    list="eventos">
+                <datalist id="eventos">
+                    <option value="Opcion1"></option>
+                    <option value="Opcion2"></option>
+                    <option value="Opcion3"></option>
+                </datalist>
+            </div>
+            <div class="flex middle center cart-logo">
+                <img src="img/carrito.png">
+                <span class="cart-counter">45</span>
+            </div>
+        </div>
+        <nav class="flex center wrap">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personalizacion-invitacion.html">Personalización de Invitacion</a></li>
+                <li><a href="form-inscripcion.html">Formulario de inscripción</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="flex row center wrap">
+            <article class="flex column m-2 preview-box">                
+                    <h1 class="preview-title">TITULO</h1>        
+                    <h2 class="preview-subtitle">29 de Mayo de 2019, 20hs</h2>                            
+            </article>
+            <article class="flex column m-2">
+                <h2>Personalización de Invitación</h2>
+                <form action="*" class="flex column invitation-form">
+                    <div class="form-element">
+                        <input type="text" class="form-input" placeholder="Titulo Evento">
+                    </div>
+                    <div class="form-element">
+                        <label class="form-label">Color:</label>
+                        <div class="flex row">
+                            <div class="flex column middle center margin">
+                                <div class="circle red"></div>
+                                <input type="radio" name="color" value="red">
+                            </div>
+                            <div class="flex column middle center margin">
+                                <div class="circle green"></div>
+                                <input type="radio" name="color" value="green">
+                            </div>
+                            <div class="flex column middle center margin">
+                                <div class="circle blue"></div>
+                                <input type="radio" name="color" value="blue">
+                            </div>
+                            <div class="flex column middle center margin">
+                                <div class="circle black"></div>
+                                <input type="radio" name="color" value="black">
+                            </div>
+                            <div class="flex column middle center margin">
+                                <div class="circle yellow"></div>
+                                <input type="radio" name="color" value="yellow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <label class="form-label">Tamaño de Fuente:</label>
+                        <div class="flex row">
+                            <div class="flex column middle center margin radio-element">
+                                <label for="20px" class="label-20 radio-label">20px</label>
+                                <input id="20px" class="radio-input" type="radio" name="font-size" value="20px">
+                            </div>
+                            <div class="flex column middle center margin radio-element">
+                                <label for="28px" class="label-28 radio-label">28px</label>
+                                <input id="28px" class="radio-input" type="radio" name="font-size" value="28px">
+                            </div>
+                            <div class="flex column middle center margin radio-element">
+                                <label for="32px" class="label-32 radio-label">32px</label>
+                                <input id="32px" class="radio-input" type="radio" name="font-size" value="32px">
+                            </div>
+                            <div class="flex column middle center margin radio-element">
+                                <label for="48px" class="label-48">48px</label>
+                                <input id="48px" class="radio-input" type="radio" name="font-size" value="48px">
+                            </div>
+                            <div class="flex column middle center margin radio-element">
+                                <label for="60px" class="label-60">60px</label>
+                                <input id="60px" class="radio-input" type="radio" name="font-size" value="60px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <input type="text" class="form-input" placeholder="Fecha y Hora">
+                    </div>
+                    <div class="form-element">
+                        <label class="form-label">Ubicacion:</label>
+                        <div class="flex row">
+                            <div class="flex column middle center margin">
+                                <div class="square gray">
+                                    <div class="rectangle bottom-right"></div>
+                                </div>
+                                <input type="radio" name="position" value="bottom-right">
+                            </div>
+                            <div class="flex column middle center margin">
+                                <div class="square gray">
+                                    <div class="rectangle left"></div>
+                                </div>
+                                <input type="radio" name="position" value="left">
+                            </div>
+                            <div class="flex column middle center margin">
+                                <div class="square gray">
+                                    <div class="rectangle right"></div>
+                                </div>
+                                <input type="radio" name="position" value="right">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <label class="form-label">Fondo:</label>
+                        <div class="flex row">
+                            <div class="flex column middle center margin">
+                                <div class="square red"></div>
+                                <input type="radio" name="background" value="red">
+                            </div>
+                            <div class="flex column middle center margin">
+                                <div class="square green"></div>
+                                <input type="radio" name="background" value="green">
+                            </div>
+                            <div class="flex column middle center margin">
+                                <div class="square blue"></div>
+                                <input type="radio" name="background" value="blue">
+                            </div>
+                            <div class="flex column middle center margin">
+                                <div class="square black"></div>
+                                <input type="radio" name="background" value="black">
+                            </div>
+                            <div class="flex column middle center margin">
+                                <div class="square yellow"></div>
+                                <input type="radio" name="background" value="yellow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <a class="button-finish"> Confirmar</a>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="flex row wrap center footer-container">
+            <article class="footer-column">
+                <ul>
+                    <li> Sanchez, Maximiliano </li>
+                    <li> Matto, Rodrigo </li>
+                    <li> Franco, Agustin </li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Personalización de Invitacion</a></li>
+                    <li><a href="form-inscripcion.html">Formulario de inscripción</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <ul>
+                    <li> Instagram </li>
+                    <li> Facebook </li>
+                </ul>
+            </article>
+        </section>
+    </footer>
+</body>
+
+</html>

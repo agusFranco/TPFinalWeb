@@ -4,10 +4,6 @@
 @import "./footer.css";
 @import "./event-card.css";
 
-main {
-  background-color: #ededed;
-}
-
 .slider-img {
   height: 200px;
   width: 100%;
