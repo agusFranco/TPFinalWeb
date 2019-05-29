@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -83,12 +85,12 @@ a.btn-primary:hover {
 }
 
 .form-textarea {
-  width: 100%; 
+  width: 100%;
   border-radius: 0.25em;
   border: 1px solid #ced4da;
   padding: 0.375rem 0.75rem;
   box-sizing: border-box;
-  display: block; 
+  display: block;
 }
 
 .form-label {
