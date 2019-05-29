@@ -39,58 +39,68 @@
             </ul>
         </nav>
     </header>
-    
-    <main>
-        <h2>CONTACTO</h2>
-        <section>
-            <!--DATOS DE CONTACTO-->
-            <article>
-                <!--NOMBRE Y APELLIDO-->
-                <input type="text" name="nom_ap" id="nom_ap" placeholder="Ingrese nombre y apellido" required>
-                <br>
-                <!--EMAIL-->
-                <input type="email" name="correo" id="nom_ap" placeholder="Ingrese su email" required>
-                <br>
-                <!--TELEFONO-->
-                <input type="telefono" name="tel" id="tel" placeholder="Telefono (opcional)">
-                <br>
-                <!--CONSULTA-->
-                <textarea name="consulta" placeholder="Deje su consulta" required=""></textarea>
-                <br>
-                <!--BOTON DE ENVIO-->
-                <button>
-                    ENVIAR
-                </button>
-            </article>
 
-            <!--DATOS DE CONTACTO DE LA EMPRESA-->
-            <article>
-                <p>
-                    Direccion:
-                    <br>
-                    Calle falsa 123
-                </p>
-                <p>
-                    Telefono:
-                    <br>
-                    4625-7894
-                </p>
-                <p>
-                    Email:
-                    <br>
-                    empresa@eventos.com.ar
-                </p>
+    <main>
+        <section class="flex row">
+            <article class="flex column w-50 margin">
+                <h1 class="contact-title">CONTACTO</h1>
+                <form action="*">
+                    <div class="form-element">
+                        <label class="form-label">Nombre y Apellido:</label>
+                        <input type="text" class="form-input" name="nom_ap" placeholder="Ingrese nombre y apellido"
+                            required>
+                    </div>
+
+                    <div class="form-element">
+                        <label class="form-label">Correo Electronico:</label>
+                        <input type="text" class="form-input" name="email" placeholder="Ingrese su email" required>
+                    </div>
+
+                    <div class="form-element">
+                        <label class="form-label">Telefono:</label>
+                        <input type="tel" class="form-input" name="phone" placeholder="Ingrese su Telefono (opcional)">
+                    </div>
+
+                    <div class="form-element">
+                        <label class="form-label">Consulta:</label>
+                        <textarea name="consulta" class="form-textarea" rows="15" placeholder="Deje su consulta"
+                            required></textarea>
+                    </div>
+
+                    <div class="flex right">
+                        <button class="button-primary">
+                            ENVIAR
+                        </button>
+                    </div>
+                </form>
+            </article>
+            <article class="flex column middle w-50 margin">
+                <h2>DATOS DE LA EMPRESA</h2>
+                <div>
+                    <ul>
+                        <li>
+                            <p class="contact-paragraph"> Direccion: <strong> Domingo Palmero 3678 </strong> </p>
+                        </li>
+                        <li>
+                            <p class="contact-paragraph"> Telefono: <strong> 4625-7894 </strong> </p>
+                        </li>
+                        <li>
+                            <p class="contact-paragraph"> Email: <strong> contacto@softevents.com.ar </strong> </p>
+                        </li>
+                    </ul>               
+                </div>
+
             </article>
         </section>
 
-        <!--UBICACION-->
-        <aside>
-            <h2>UBICACION</h2>
-            <!--MAPA-->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.7419206988875!2d-58.66064738504951!3d-34.68646246938729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc0c549dc0f75%3A0x3dba9efbc77706cc!2sDomingo+Palmero+3678%2C+B1712NPV+Castelar%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1558378074221!5m2!1ses!2sar"
-                width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </aside>
+        <section class="location-section">
+            <article class="flex column center">
+                <h2 class="text-center">UBICACION</h2>
+                <iframe class="contact-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.7419206988875!2d-58.66064738504951!3d-34.68646246938729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc0c549dc0f75%3A0x3dba9efbc77706cc!2sDomingo+Palmero+3678%2C+B1712NPV+Castelar%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1558378074221!5m2!1ses!2sar"
+                    allowfullscreen></iframe>
+            </article>
+        </section>
     </main>
     <footer>
         <section class="flex row wrap center footer-container">
@@ -112,7 +122,7 @@
             <article class="footer-column">
                 <ul>
                     <li> Instagram </li>
-                    <li> Facebook </li>                    
+                    <li> Facebook </li>
                 </ul>
             </article>
         </section>
