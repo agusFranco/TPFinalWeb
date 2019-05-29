@@ -1,8 +1,8 @@
-@import "./reset.css";
-@import "./flex-styles.css";
-@import "./header.css";
-@import "./footer.css";
-@import "./event-card.css";
+@import "../common/reset.css";
+@import "../common/flex-styles.css";
+@import "../common/header.css";
+@import "../common/footer.css";
+@import "../common/event-card.css";
 
 .slider-img {
   height: 200px;
