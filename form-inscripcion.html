@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario de Inscripcion</title>
     <link rel="stylesheet" href="estilos/form-inscripcion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -39,82 +40,80 @@
         </nav>
     </header>
 
-    <!--Main-->
     <main>
-        <section>
-            <article class="margen-izquierdo">
-                <h1>Cena con musica</h1>
-            </article>
-            <article class="margen-izquierdo">
+        <section class="flex column p-3">
+            <h1 class="title">Cena con musica</h1>
+            <article>
                 <h2>Inscripcion</h2>
+                <form action="*" class="flex row between wrap">
+                    <div class="form-element">
+                        <label class="form-label">Nombre:</label>
+                        <input type="text" class="form-input" name="nombre" placeholder="Ingrese nombre" required>
+                    </div>
+                    <div class="form-element">
+                        <label class="form-label">Apellido:</label>
+                        <input type="text" class="form-input" name="apellido" placeholder="Ingrese apellido" required>
+                    </div>
+                    <div class="form-element">
+                        <label class="form-label">Documento:</label>
+                        <input type="text" class="form-input" name="dni" placeholder="Ingrese DNI" required>
+                    </div>
+                    <div class="flex middle">
+                        <a href="#">
+                            <i class="fa fa-minus-circle fa-2x"></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="*" class="flex row between wrap">
+                    <div class="form-element">
+                        <label class="form-label">Nombre:</label>
+                        <input type="text" class="form-input" name="nombre" placeholder="Ingrese nombre" required>
+                    </div>
+                    <div class="form-element">
+                        <label class="form-label">Apellido:</label>
+                        <input type="text" class="form-input" name="apellido" placeholder="Ingrese apellido" required>
+                    </div>
+                    <div class="form-element">
+                        <label class="form-label">Documento:</label>
+                        <input type="text" class="form-input" name="dni" placeholder="Ingrese DNI" required>
+                    </div>
+                    <div class="flex middle">
+                        <a href="#">
+                            <i class="fa fa-minus-circle fa-2x"></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="*" class="flex row between wrap">
+                    <div class="form-element">
+                        <label class="form-label">Nombre:</label>
+                        <input type="text" class="form-input" name="nombre" placeholder="Ingrese nombre" required>
+                    </div>
+                    <div class="form-element">
+                        <label class="form-label">Apellido:</label>
+                        <input type="text" class="form-input" name="apellido" placeholder="Ingrese apellido" required>
+                    </div>
+                    <div class="form-element">
+                        <label class="form-label">Documento:</label>
+                        <input type="text" class="form-input" name="dni" placeholder="Ingrese DNI" required>
+                    </div>
+                    <div class="flex middle">
+                        <a href="#">
+                            <i class="fa fa-minus-circle fa-2x"></i>
+                        </a>
+                    </div>
+                </form>
+                <div class="flex middle margin">
+                    <a href="#">
+                        <i class="fa fa-plus-circle"></i> Agregar Persona
+                    </a>
+                </div>
+
+                <div class="flex middle margin">
+                    <span class="black-box">$000.-</span>
+                    <button class="button-finish">INSCRIBIRSE</button>
+                </div>
             </article>
         </section>
-        <!--Formularios input-->
-        <section class="flex row wrap between center margen-izquierdo">
-            <form class="flex between" action="#" method="get">
-                <article>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required="">
-                </article>
-                <article>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required="">
-                </article>
-                <article>
-                    <label for="nombre">Documento</label>
-                    <input type="text" id="documento" name="dni" placeholder="Ingrese su documento" required="">
-                </article>
-                <input type='image' name="botonparaenviar" src="img/menos.png" alt="image" width="20" height="20">
-        </section>
-        <section class="flex row wrap between center margen-izquierdo">
-            <form class="flex between" action="#" method="get">
-                <article>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required="">
-                </article>
-                <article>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required="">
-                </article>
-                <article>
-                    <label for="nombre">Documento</label>
-                    <input type="text" id="documento" name="dni" placeholder="Ingrese su documento" required="">
-                </article>
-                <input type='image' name="botonparaenviar" src="img/menos.png" alt="image" width="20" height="20">
-        </section>
-        <section class="flex row wrap between center margen-izquierdo">
-            <form class="flex between" action="#" method="get">
-                <article>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required="">
-                </article>
-                <article>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required="">
-                </article>
-                <article>
-                    <label for="nombre">Documento</label>
-                    <input type="text" id="documento" name="dni" placeholder="Ingrese su documento" required="">
-                </article>
-                <input type='image' name="botonparaenviar" src="img/menos.png" alt="image" width="20" height="20">
-        </section>
-        <section class="flex row middle between center">
-            <article class="margen-izquierdo">
-                <input type='image' name="botonparaagregar" src="img/mas.png" alt="image" width="20" height="20">
-            </article>
-            <article class="espaciado-objetos">
-                <h2>Agregar Persona</h2>
-            </article>
-        </section>
-        <section class="flex row middle between center">
-            <article class="black-box margen-boxes">
-                <h2 class=" tamaño-box1">$000.-</h2>
-            </article>
-            <article class="grey-box espaciado-objetos2">
-                <h2 class="tamaño-box2">Inscribirse</h2>
-            </article>
-        </section>
-        <div class="div-separador"></div>
     </main>
     <footer>
         <section class="flex row wrap center footer-container">
