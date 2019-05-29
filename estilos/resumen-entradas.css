@@ -25,3 +25,7 @@ th {
 .table-footer {
   margin-top: 2em;
 }
+
+.table-row {
+  height: 4em;
+}
