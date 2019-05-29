@@ -1,3 +1,11 @@
+.starred-events-section {
+  text-align: center;
+}
+
+.starred-events-title {
+  text-align: center;
+}
+
 .event-card {
   margin: 1%;
   width: 30%;
@@ -16,7 +24,7 @@
 
 .event-card .event-card-container {
   padding: 1%;
-  height: 6.250em;
+  height: 6.25em;
 }
 
 .event-card .event-card-container .event-card-date {

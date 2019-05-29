@@ -4,49 +4,31 @@
 @import "./footer.css";
 @import "./event-card.css";
 
-main section {
-  width: 90%;
-  margin: auto;
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
+.detail-article {
+  background-color: white;
+  width: 50%;
+  height: 20em;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 1em;
 }
 
-main article {
-  background-color: #ccc;
-  padding: 10px;
-  width: 35%;
-  height: 400px;
-  margin: 15px;
-  border-radius: 10px;
+.detail-paragraph {
+  margin-top: 0.5em;
 }
 
-h2 {
-  font-weight: lighter;
-  font-size: 18px;
+.detail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-main p {
-  font-size: 15px;
-  padding-bottom: 10px;
+.iframe-container {
+  width: 100%;
+  margin: 1em;
 }
 
-button {
-  background-color: #003a99;
-  color: #fff;
-  padding: 5px;
-  border-style: none;
-  border-radius: 5px;
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 15px;
-}
-
-aside {
-  text-align: center;
-}
-
-img {
-  width: auto;
+.iframe-container iframe{
+  width: 100%;
+  border: 0;
 }

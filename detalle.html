@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Detalle de Evento</title>
-    
+
     <link rel="stylesheet" type="text/css" href="estilos/detalle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -41,90 +41,81 @@
         </nav>
     </header>
     <main>
-
-        <!--Sector de Foto y Detalle de Evento-->
-
-        <section class="flex flex center">
-
-            <!--Foto-->
-            <article class="flex justify center flex middle">
-
-                <div>
-                    foto
-                </div>
-
+        <section class="flex center">
+            <article class="flex center middle detail-article">
+                <img class="detail-img" src="img/event-1.jpg" alt="Evento">
             </article>
-
-            <!--Detalle de Evento-->
-            <article class="flex flex column relative">
-
-                <h2>TITULO DE EVENTO</h2>
-                <P>Fecha y Hora:</P>
-                <p>Organizador:</p>
-                <p>Descripcion del evento:</p>
-                <button>
-                    INSCRIBIRSE
-                </button>
-
+            <article class="flex column between detail-article">
+                <div>
+                    <h1>Cena con show privado</h1>
+                    <p class="detail-paragraph">Fecha y Hora: <strong>28/06/2019 19:00</strong> </p>
+                    <p class="detail-paragraph">Organizador: <strong>SoftEvents</strong></p>
+                    <p class="detail-paragraph">Descripcion del evento: <strong>Cena de 4 pasos + Show musical.</strong>
+                    </p>
+                </div>
+                <div>
+                    <button class="button-primary">
+                        INSCRIBIRSE
+                    </button>
+                </div>
             </article>
         </section>
 
-        <!--Ubicacion y mapa-->
-        <aside>
+        <section class="flex center">
+            <article class="flex column w-100">
+                <h2 class="text-center">UBICACION</h2>
+                <div class="iframe-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.017574441614!2d-58.4227298850532!3d-34.57842186366665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59cd6452553%3A0x6b521307d135059a!2sLa+Rural!5e0!3m2!1ses!2sar!4v1558704530235!5m2!1ses!2sar"></iframe>
+                </div>
+            </article>
+        </section>
 
-            <h2>UBICACION</h2>
-            <section class="flex column">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.017574441614!2d-58.4227298850532!3d-34.57842186366665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59cd6452553%3A0x6b521307d135059a!2sLa+Rural!5e0!3m2!1ses!2sar!4v1558704530235!5m2!1ses!2sar"
-                    style="border:0"></iframe>
+
+        <section class="starred-events-section">
+            <h2 class="starred-events-title">EVENTOS DESTACADOS</h2>
+            <section class="flex row wrap center">
+                <article class="event-card">
+                    <img class="event-img" src="img/event-1.jpg">
+                    <div class="event-card-container flex row middle between">
+                        <div class="event-card-date">
+                            <h2>JUN <span class="event-card-date-number">9</span></h2>
+                        </div>
+                        <div class="event-card-content">
+                            <h3 class="event-card-title">Cena con Musica</h3>
+                            <small class="event-card-subtitle"> <a href="detalle.html">Ver Detalle</a></small>
+                            <a href="#" class="btn-primary"> <i class="fa fa-ticket"></i> Comprar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card">
+                    <img class="event-img" src="img/event-1.jpg">
+                    <div class="event-card-container flex row middle between">
+                        <div class="event-card-date">
+                            <h2>JUN <span class="event-card-date-number">9</span></h2>
+                        </div>
+                        <div class="event-card-content">
+                            <h3 class="event-card-title">Cena con Musica</h3>
+                            <small class="event-card-subtitle"> <a href="detalle.html">Ver Detalle</a></small>
+                            <a href="#" class="btn-primary"> <i class="fa fa-ticket"></i> Comprar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card">
+                    <img class="event-img" src="img/event-1.jpg">
+                    <div class="event-card-container flex row middle between">
+                        <div class="event-card-date">
+                            <h2>JUN <span class="event-card-date-number">9</span></h2>
+                        </div>
+                        <div class="event-card-content">
+                            <h3 class="event-card-title">Cena con Musica</h3>
+                            <small class="event-card-subtitle"> <a href="detalle.html">Ver Detalle</a></small>
+                            <a href="#" class="btn-primary"> <i class="fa fa-ticket"></i> Comprar</a>
+                        </div>
+                    </div>
+                </article>
             </section>
-
-            <!--Eventos relacionados-->
-
-            <h2>EVENTOS RELACIONADOS</h2>
-            <section class="flex center">
-                <article class="event-card">
-                    <img class="event-img" src="img/event-1.jpg">
-                    <div class="event-card-container flex row middle between">
-                        <div class="event-card-date">
-                            <h2>JUN <span class="event-card-date-number">9</span></h2>
-                        </div>
-                        <div class="event-card-content">
-                            <h3 class="event-card-title">Cena con Musica</h3>
-                            <small class="event-card-subtitle"> <a href="">Ver Detalle</a></small>
-                            <a href="" class="event-card-button"> <i class="fa fa-ticket"></i> Comprar</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="event-card">
-                    <img class="event-img" src="img/event-1.jpg">
-                    <div class="event-card-container flex row middle between">
-                        <div class="event-card-date">
-                            <h2>JUN <span class="event-card-date-number">9</span></h2>
-                        </div>
-                        <div class="event-card-content">
-                            <h3 class="event-card-title">Cena con Musica</h3>
-                            <small class="event-card-subtitle"> <a href="">Ver Detalle</a></small>
-                            <a href="" class="event-card-button"> <i class="fa fa-ticket"></i> Comprar</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="event-card">
-                    <img class="event-img" src="img/event-1.jpg">
-                    <div class="event-card-container flex row middle between">
-                        <div class="event-card-date">
-                            <h2>JUN <span class="event-card-date-number">9</span></h2>
-                        </div>
-                        <div class="event-card-content">
-                            <h3 class="event-card-title">Cena con Musica</h3>
-                            <small class="event-card-subtitle"> <a href="">Ver Detalle</a></small>
-                            <a href="" class="event-card-button"> <i class="fa fa-ticket"></i> Comprar</a>
-                        </div>
-                    </div>
-                </article>
-
-            </section>
-        </aside>
+        </section>
     </main>
     <footer>
         <section class="flex row wrap center footer-container">
@@ -146,7 +137,7 @@
             <article class="footer-column">
                 <ul>
                     <li> Instagram </li>
-                    <li> Facebook </li>                    
+                    <li> Facebook </li>
                 </ul>
             </article>
         </section>
