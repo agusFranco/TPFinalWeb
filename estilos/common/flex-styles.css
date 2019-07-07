@@ -105,6 +105,10 @@
     width: 50%;
   }
 
+  .flex.dw-40 {
+    width: 40%;
+  }
+
   .flex.dw-30 {
     width: 30%;
   }

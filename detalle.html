@@ -8,13 +8,15 @@
     <title>Detalle de Evento</title>
 
     <script src="js/jquery.js"></script>
+    <script src="js/jquery-modal.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/detalle.js"></script>
 
     <link rel="stylesheet" type="text/css" href="estilos/pages/detalle.css">
 </head>
 
 <body>
-     <header>
+    <header>
         <div class="flex wrap">
             <div class="flex mw-100 dw-33 center middle brand">
                 <a href="index.html">
@@ -47,11 +49,11 @@
         <a class="hamburger" onclick="toggleMenu()"></a>
     </header>
     <main>
-        <section class="flex center">
-            <article class="flex center middle detail-article">
+        <section class="flex center wrap">
+            <article class="flex mw-100 dw-40 detail-article">
                 <img class="detail-img" src="img/event-1.jpg" alt="Evento">
             </article>
-            <article class="flex column between detail-article">
+            <article class="flex column between mw-100 dw-40 detail-article">
                 <div>
                     <h1>Cena con show privado</h1>
                     <p class="detail-paragraph">Fecha y Hora: <strong>28/06/2019 19:00</strong> </p>
@@ -59,27 +61,24 @@
                     <p class="detail-paragraph">Descripción del evento: <strong>Cena de 4 pasos + Show musical.</strong>
                     </p>
                 </div>
-                <div>
-                    <a href="form-inscripcion.html" class="btn-primary">
+                <div class="flex">
+                    <a href="#" onclick="mostrarModal()" class="btn-primary m-block">
                         INSCRIBIRSE
                     </a>
                 </div>
             </article>
         </section>
-
         <section class="flex center">
             <article class="flex column mw-100 dw-100">
-                <h2 class="text-center">UBICACION</h2>
+                <h2 class="section-title">UBICACION</h2>
                 <div class="iframe-container">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.017574441614!2d-58.4227298850532!3d-34.57842186366665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59cd6452553%3A0x6b521307d135059a!2sLa+Rural!5e0!3m2!1ses!2sar!4v1558704530235!5m2!1ses!2sar"></iframe>
                 </div>
             </article>
         </section>
-
-
         <section class="starred-events-section">
-            <h2 class="starred-events-title">EVENTOS RELACIONADOS</h2>
+            <h2 class="section-title">EVENTOS RELACIONADOS</h2>
             <section class="flex row wrap center">
                 <article class="event-card">
                     <img class="event-img" src="img/event-1.jpg">
@@ -125,6 +124,17 @@
                 </article>
             </section>
         </section>
+        <div id="successModal" class="modal">
+            <h3>Gracias por Inscribirse!!</h3>
+            <p class="detail-paragraph">Evento: <strong>Cena con Show Privado</strong> </p>
+            <p class="detail-paragraph">Fecha y Hora: <strong>28/06/2019 19:00</strong> </p>
+            <p class="detail-paragraph">Organizador: <strong>SoftEvents</strong></p>
+            <p class="detail-paragraph">Descripción del evento: <strong>Cena de 4 pasos + Show musical.</strong>
+            </p>
+            <div class="flex start mt-3">
+                <a href="#" class="btn-finish m-block" rel="modal:close">Entendido!</a>
+            </div>
+        </div>
     </main>
     <footer>
         <section class="flex row wrap center footer-container">
