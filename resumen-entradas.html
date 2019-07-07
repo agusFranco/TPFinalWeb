@@ -9,12 +9,13 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/resumen-entradas.js"></script>
 
     <link rel="stylesheet" href="estilos/pages/resumen-entradas.css">
 </head>
 
 <body>
-     <header>
+    <header>
         <div class="flex wrap">
             <div class="flex mw-100 dw-33 center middle brand">
                 <a href="index.html">
@@ -63,26 +64,36 @@
                     </thead>
                     <tbody>
                         <tr class="table-row">
-                            <td><span> 09-06-2019 </span></td>
-                            <td><span> Cena con Show Privado </span></td>
-                            <td> <a href="personalizacion-invitacion.html" class="btn-primary"> Personalizar </a>
+                            <td data-label="Fecha"><span> 09-06-2019 </span></td>
+                            <td data-label="Titulo"><span> Cena con Show Privado </span></td>
+                            <td data-label="Estado"> <a href="personalizacion-invitacion.html" class="btn-primary">
+                                    Personalizar </a>
                             </td>
-                            <td><span> $200.00 </span></td>
-                            <td><span> 2 </span></td>
-                            <td><span> $400.00 </span></td>
+                            <td data-label="Precio">$ <span class="unit-price">200.00</span></td>
+                            <td data-label="Cantidad"><input type="number" class="form-input text-center cantidad"
+                                    value="0" steps="1">
+                            </td>
+                            <td data-label="Total">$ <span class="subtotal">0.00</span></td>
                         </tr>
                         <tr class="table-row">
-                            <td><span> 06-07-2019 </span></td>
-                            <td><span> Caminos y Sabores </span></td>
-                            <td> <a href="personalizacion-invitacion.html" class="btn-finish"> Modificar
-                                    personalización </a></td>
-                            <td><span> $400.00 </span></td>
-                            <td><span> 2 </span></td>
-                            <td><span> $800.00 </span></td>
+                            <td data-label="Fecha"><span> 06-07-2019 </span></td>
+                            <td data-label="Titulo"><span>Caminos y Sabores </span></td>
+                            <td data-label="Estado"> <a href="personalizacion-invitacion.html" class="btn-finish">
+                                    Modificar </a>
+                            </td>
+                            <td data-label="Precio">$ <span class="unit-price">400.00</span></td>
+                            <td data-label="Cantidad"><input type="number" class="form-input text-center cantidad"
+                                    value="0" steps="1">
+                            </td>
+                            <td data-label="Total">$ <span class="subtotal">0.00</span></td>
+                        </tr>
+                        <tr class="table-row">
+                            <td colspan="5"><span>TOTAL</span></td>
+                            <td data-label="Total">$ <span id="total">0.00</span></td>
                         </tr>
                     </tbody>
                 </table>
-                <div class="flex right table-footer">
+                <div class="flex table-footer">
                     <a href="index.html" class="btn-primary"> <i class="fa fa-ticket"></i> Seguir Comprando</a>
                     <a href="index.html" class="btn-finish"> <i class="fa fa-ticket"></i> Finalizar Compra</a>
                 </div>
