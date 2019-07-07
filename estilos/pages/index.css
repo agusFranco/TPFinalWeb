@@ -4,10 +4,10 @@
 @import "../common/footer.css";
 @import "../common/event-card.css";
 
-.slider-img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
+.section-title {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .step-section {
@@ -17,15 +17,7 @@
 
 .starred-events-section {
   text-align: center;
-  margin: 3%;
-}
-
-.starred-events-title {
-  text-align: center;
-}
-
-.payment-types-title {
-  text-align: center;
+  margin: 4%;
 }
 
 .payment-type-card {

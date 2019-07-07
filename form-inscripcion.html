@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario de Inscripcion</title>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/header.js"></script>
+
     <link rel="stylesheet" href="estilos/pages/form-inscripcion.css">
 </head>
 
 <body>
-    <header>
-        <div class="flex between wrap">
-            <div class="flex middle center brand">
+     <header>
+        <div class="flex wrap">
+            <div class="flex mw-100 dw-33 center middle brand">
                 <a href="index.html">
                     <img src="img/logo.png">
                 </a>
             </div>
-            <div class="flex middle center buscador">
+            <div class="flex mw-100 dw-33 center middle buscador">
                 <input type="text" name="eventos" class="search-box" placeholder="Inicie su busqueda aqui..."
                     list="eventos">
                 <datalist id="eventos">
@@ -26,20 +30,21 @@
                     <option value="Opcion3"></option>
                 </datalist>
             </div>
-            <div class="flex middle center cart-logo">
+            <div class="flex mw-100 dw-33 right middle cart-logo">
                 <a href="resumen-entradas.html">
                     <img src="img/carrito.png">
                 </a>
-                <span class="cart-counter">2</span>
+                <span id="cart-counter" class="cart-counter"></span>
             </div>
         </div>
-        <nav class="flex center wrap">
-            <ul>
+        <nav class="flex center wrap menu">
+            <ul class="menu-list">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="resumen-entradas.html">Resumen de Entradas</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <a class="hamburger" onclick="toggleMenu()"></a>
     </header>
     <main>
         <section class="flex column p-3">

@@ -8,7 +8,7 @@
 
 .event-card {
   margin: 1%;
-  width: 30%;
+  width: 100%;
   box-sizing: border-box;
   background-color: white;
   border-radius: 0.625em;
@@ -53,4 +53,10 @@
   padding: 5px 32px;
   text-decoration: none;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 47em) {
+  .event-card{
+    width: 30%;
+  }
 }

@@ -27,10 +27,7 @@
 }
 
 .flex.right {
-  justify-content: flex-end;
-  align-content: flex-end;
-  align-items: flex-end;
-  align-self: flex-end;
+  justify-content: flex-end;  
 }
 
 .flex.middle {
@@ -43,16 +40,40 @@
   flex-grow: 3;
 }
 
-.flex.w-30 {
+.flex.mw-30 {
   width: 30%;
 }
 
-.flex.w-100 {
+.flex.mw-100 {
   width: 100%;
 }
 
-.flex.w-50 {
-  width: 48%;
+.flex.mw-50 {
+  width: 50%;
+}
+
+.flex.mt-1 {
+  margin-top: 1em;
+}
+
+.flex.mt-2 {
+  margin-top: 2em;
+}
+
+.flex.mt-3 {
+  margin-top: 3em;
+}
+
+.flex.mb-1 {
+  margin-bottom: 1em;
+}
+
+.flex.mb-2 {
+  margin-bottom: 2em;
+}
+
+.flex.mb-3 {
+  margin-bottom: 3em;
 }
 
 .flex.margin {
@@ -73,4 +94,22 @@
 
 .flex.p-3 {
   padding: 2em;
+}
+
+@media screen and (min-width: 47em) {
+  .flex.dw-100 {
+    width: 100%;
+  }
+
+  .flex.dw-50 {
+    width: 50%;
+  }
+
+  .flex.dw-30 {
+    width: 30%;
+  }
+
+  .flex.dw-33 {
+    width: 33%;
+  }
 }

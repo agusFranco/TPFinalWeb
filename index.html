@@ -7,18 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SoftEvents</title>
 
+    <script src="js/ninja-slider.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" href="estilos/external/ninja-slider.css">
     <link rel="stylesheet" href="estilos/pages/index.css">
 </head>
 
 <body>
     <header>
-        <div class="flex between wrap">
-            <div class="flex middle center brand">
+        <div class="flex wrap">
+            <div class="flex mw-100 dw-33 center middle brand">
                 <a href="index.html">
                     <img src="img/logo.png">
                 </a>
             </div>
-            <div class="flex middle center buscador">
+            <div class="flex mw-100 dw-33 center middle buscador">
                 <input type="text" name="eventos" class="search-box" placeholder="Inicie su busqueda aqui..."
                     list="eventos">
                 <datalist id="eventos">
@@ -27,30 +33,53 @@
                     <option value="Opcion3"></option>
                 </datalist>
             </div>
-            <div class="flex middle center cart-logo">
+            <div class="flex mw-100 dw-33 right middle cart-logo">
                 <a href="resumen-entradas.html">
                     <img src="img/carrito.png">
                 </a>
-                <span class="cart-counter">2</span>
+                <span id="cart-counter" class="cart-counter"></span>
             </div>
         </div>
-        <nav class="flex center wrap">
-            <ul>
+        <nav class="flex center wrap menu">
+            <ul class="menu-list">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="resumen-entradas.html">Resumen de Entradas</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <a class="hamburger" onclick="toggleMenu()"></a>
     </header>
     <main>
         <section class="slider-section">
             <article>
-                <img class="slider-img" src="img/main-banner.png" alt="Evento">
+                <div id="ninja-slider">
+                    <div class="slider-inner">
+                        <ul>
+                            <li>
+                                <a class="ns-img" href="img/event-1.jpg" onclick="irAEvento()"></a>
+                                <div class="caption">Eventos</div>
+                            </li>
+                            <li>
+                                <a class="ns-img" href="img/evento2.png" onclick="irAEvento()"></a>
+                                <div class="caption">Gastronomia</div>
+                            </li>
+                            <li>
+                                <a class="ns-img" href="img/evento3.png" onclick="irAEvento()"></a>
+                                <div class="caption">Degustaciones</div>
+                            </li>
+                        </ul>
+                        <div class="navsWrapper">
+                            <div id="ninja-slider-prev"></div>
+                            <div id="ninja-slider-next"></div>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
 
         <section class="step-section">
-            <section class="flex row wrap between">
+            <h2 class="section-title">INSCRIBIRSE</h2>
+            <section class="flex row wrap between">                
                 <article class="step-article">
                     <h3>1) Seleccione el evento de mayor interés.</span>
                 </article>
@@ -64,7 +93,7 @@
         </section>
 
         <section class="starred-events-section">
-            <h2 class="starred-events-title">EVENTOS DESTACADOS</h2>
+            <h2 class="section-title">EVENTOS DESTACADOS</h2>
             <section class="flex row wrap center">
                 <article class="event-card">
                     <img class="event-img" src="img/event-1.jpg">
@@ -75,7 +104,8 @@
                         <div class="event-card-content">
                             <h3 class="event-card-title">Cena con Show Privado</h3>
                             <small class="event-card-subtitle"> <a href="detalle.html">Ver Detalle</a></small>
-                            <a href="form-inscripcion.html" class="btn-primary"> <i class="fa fa-ticket"></i>
+                            <a href="form-inscripcion.html" class="btn-primary" onclick="comprarEntrada()"> <i
+                                    class="fa fa-ticket"></i>
                                 Comprar</a>
                         </div>
                     </div>
@@ -89,7 +119,8 @@
                         <div class="event-card-content">
                             <h3 class="event-card-title">Caminos y Sabores</h3>
                             <small class="event-card-subtitle"> <a href="detalle.html">Ver Detalle</a></small>
-                            <a href="form-inscripcion.html" class="btn-primary"> <i class="fa fa-ticket"></i>
+                            <a href="form-inscripcion.html" class="btn-primary" onclick="comprarEntrada()"> <i
+                                    class="fa fa-ticket"></i>
                                 Comprar</a>
                         </div>
                     </div>
@@ -103,7 +134,8 @@
                         <div class="event-card-content">
                             <h3 class="event-card-title">Vinos y Bodegas</h3>
                             <small class="event-card-subtitle"> <a href="detalle.html">Ver Detalle</a></small>
-                            <a href="form-inscripcion.html" class="btn-primary"> <i class="fa fa-ticket"></i>
+                            <a href="form-inscripcion.html" class="btn-primary" onclick="comprarEntrada()"> <i
+                                    class="fa fa-ticket"></i>
                                 Comprar</a>
                         </div>
                     </div>
@@ -112,7 +144,7 @@
         </section>
 
         <section class="payment-types-section">
-            <h2 class="payment-types-title">MEDIOS DE PAGO</h2>
+            <h2 class="section-title">MEDIOS DE PAGO</h2>
             <section class="flex row wrap center">
                 <article class="payment-type-card">
                     <img src="img/visa.png" class="payment-type-card-img" alt="Visa">

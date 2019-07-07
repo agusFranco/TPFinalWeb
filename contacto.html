@@ -7,18 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contacto</title>
 
+    <script src="js/jquery.js"></script>
+    <script src="js/header.js"></script>
+
     <link rel="stylesheet" href="estilos/pages/contacto.css">
 </head>
 
 <body>
-    <header>
-        <div class="flex between wrap">
-            <div class="flex middle center brand">
+     <header>
+        <div class="flex wrap">
+            <div class="flex mw-100 dw-33 center middle brand">
                 <a href="index.html">
                     <img src="img/logo.png">
                 </a>
             </div>
-            <div class="flex middle center buscador">
+            <div class="flex mw-100 dw-33 center middle buscador">
                 <input type="text" name="eventos" class="search-box" placeholder="Inicie su busqueda aqui..."
                     list="eventos">
                 <datalist id="eventos">
@@ -27,24 +30,25 @@
                     <option value="Opcion3"></option>
                 </datalist>
             </div>
-            <div class="flex middle center cart-logo">
+            <div class="flex mw-100 dw-33 right middle cart-logo">
                 <a href="resumen-entradas.html">
                     <img src="img/carrito.png">
                 </a>
-                <span class="cart-counter">2</span>
+                <span id="cart-counter" class="cart-counter"></span>
             </div>
         </div>
-        <nav class="flex center wrap">
-            <ul>
+        <nav class="flex center wrap menu">
+            <ul class="menu-list">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="resumen-entradas.html">Resumen de Entradas</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <a class="hamburger" onclick="toggleMenu()"></a>
     </header>
     <main>
-        <section class="flex row wrap p-3">
-            <article class="flex column w-50 margin">
+        <section class="flex row wrap p-3 mb-2">
+            <article class="flex column mw-100 dw-50 mb-2">
                 <h1 class="contact-title">CONTACTO</h1>
                 <form action="*">
                     <div class="form-element">
@@ -75,7 +79,7 @@
                     </div>
                 </form>
             </article>
-            <article class="flex column middle w-50 margin">
+            <article class="flex column mw-100 dw-50 middle">
                 <h2>DATOS DE LA EMPRESA</h2>
                 <div>
                     <ul>
@@ -93,9 +97,8 @@
 
             </article>
         </section>
-
-        <section class="location-section">
-            <article class="flex column center">
+        <section class="flex row wrap mt-2 p-3">
+            <article class="flex column mw-100 dw-100 center">
                 <h2 class="text-center">UBICACION</h2>
                 <iframe class="contact-iframe"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.7419206988875!2d-58.66064738504951!3d-34.68646246938729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc0c549dc0f75%3A0x3dba9efbc77706cc!2sDomingo+Palmero+3678%2C+B1712NPV+Castelar%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1558378074221!5m2!1ses!2sar"
