@@ -48,6 +48,12 @@ body {
   text-decoration: none;
 }
 
+.btn-primary:disabled{
+  background-color: gray;
+  cursor: not-allowed;  
+  color: white;
+  text-decoration: none;
+}
 .btn-finish {
   cursor: pointer;
   padding: 0.375rem 0.75rem;
@@ -65,6 +71,13 @@ body {
 .btn-finish:hover {
   background-color: white;
   color: #007bff;
+  text-decoration: none;
+}
+
+.btn-finish:disabled{
+  background-color: gray;
+  cursor: not-allowed;  
+  color: white;
   text-decoration: none;
 }
 
@@ -93,8 +106,8 @@ body {
 }
 
 .form-element {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .text-center {

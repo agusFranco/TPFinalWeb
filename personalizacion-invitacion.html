@@ -9,12 +9,13 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/personalizacion-invitacion.js"></script>
 
     <link rel="stylesheet" href="estilos/pages/personalizacion-invitacion.css">
 </head>
 
 <body>
-     <header>
+    <header>
         <div class="flex wrap">
             <div class="flex mw-100 dw-33 center middle brand">
                 <a href="index.html">
@@ -47,16 +48,17 @@
         <a class="hamburger" onclick="toggleMenu()"></a>
     </header>
     <main>
-        <section class="flex row center wrap">
-            <article class="flex column m-2 preview-box">
-                <h1 class="preview-title">TITULO</h1>
-                <h2 class="preview-subtitle">29 de Mayo de 2019, 20hs</h2>
+        <section class="flex center wrap">
+            <article id="previewInvitation" class="flex mw-100 dw-40 invitation-article preview-box">
+                <h1 class="preview-title" id="previewTitulo">TITULO</h1>
+                <h3 class="preview-subtitle" id="previewSubTitulo">29 de Mayo de 2019, 20hs</h3>
             </article>
-            <article class="flex column m-2">
-                <h2>Personalización de Invitación</h2>
-                <form action="*" class="flex column invitation-form">
+            <article class="flex column mw-100 dw-40 invitation-article">
+                <form action="*" class="invitation-form">
+                    <h2>Personalización de Invitación</h2>
                     <div class="form-element">
-                        <input type="text" class="form-input" placeholder="Titulo Evento">
+                        <input type="text" id="tituloInput" class="form-input" placeholder="Titulo Evento"
+                            value="Titulo">
                     </div>
                     <div class="form-element">
                         <label class="form-label">Color:</label>
@@ -75,7 +77,7 @@
                             </div>
                             <div class="flex column middle center margin">
                                 <div class="circle black"></div>
-                                <input type="radio" name="color" value="black">
+                                <input type="radio" name="color" value="black" checked>
                             </div>
                             <div class="flex column middle center margin">
                                 <div class="circle yellow"></div>
@@ -88,7 +90,7 @@
                         <div class="flex row">
                             <div class="flex column middle center margin radio-element">
                                 <label for="20px" class="label-20 radio-label">20px</label>
-                                <input id="20px" class="radio-input" type="radio" name="font-size" value="20px">
+                                <input id="20px" class="radio-input" type="radio" name="font-size" value="20px" checked>
                             </div>
                             <div class="flex column middle center margin radio-element">
                                 <label for="28px" class="label-28 radio-label">28px</label>
@@ -109,7 +111,8 @@
                         </div>
                     </div>
                     <div class="form-element">
-                        <input type="text" class="form-input" placeholder="Fecha y Hora">
+                        <input type="text" id="fechaInput" class="form-input" placeholder="Fecha y Hora"
+                            value="29 de Mayo de 2019, 20hs">
                     </div>
                     <div class="form-element">
                         <label class="form-label">Ubicacion:</label>
@@ -118,7 +121,7 @@
                                 <div class="square gray">
                                     <div class="rectangle bottom-right"></div>
                                 </div>
-                                <input type="radio" name="position" value="bottom-right">
+                                <input type="radio" name="position" value="bottom-right" checked>
                             </div>
                             <div class="flex column middle center margin">
                                 <div class="square gray">
@@ -137,6 +140,10 @@
                     <div class="form-element">
                         <label class="form-label">Fondo:</label>
                         <div class="flex row">
+                            <div class="flex column middle center margin">
+                                <div class="square gray"></div>
+                                <input type="radio" name="background" value="gray" checked>
+                            </div>
                             <div class="flex column middle center margin">
                                 <div class="square red"></div>
                                 <input type="radio" name="background" value="red">
@@ -159,10 +166,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-element">
-                        <a href="resumen-entradas.html" class="btn-finish"> Confirmar</a>
-                    </div>
                 </form>
+                <div class="flex">
+                    <a href="resumen-entradas.html" class="btn-finish m-block"> Confirmar</a>
+                </div>
             </article>
         </section>
     </main>

@@ -1,12 +1,18 @@
 
 function initializeResumenEntradas() {
+    $("#botonFinalizar").prop("disabled", true);
+
     $(".cantidad").blur(function () {
-        const precio = parseFloat($(this).closest('.table-row').find('.unit-price').html());
         const cantidad = parseInt($(this).val());
-        const subtotal = (precio * cantidad).toFixed(2);
-        $(this).closest('.table-row').find('.subtotal').html(subtotal);
-        actualizarTotal();
-    });   
+
+        if (cantidad && cantidad > 0) {
+            const precio = parseFloat($(this).closest('.table-row').find('.unit-price').html());
+
+            const subtotal = (precio * cantidad).toFixed(2);
+            $(this).closest('.table-row').find('.subtotal').html(subtotal);
+            actualizarTotal();
+        }
+    });
 }
 
 function actualizarTotal() {
@@ -18,7 +24,22 @@ function actualizarTotal() {
         total += precio;
     });
 
-    $("#total").html(total.toFixed(2));
+    if (total > 0) {
+        $("#botonFinalizar").prop("disabled", false);
+        $("#total").html(total.toFixed(2));
+        $("#resumenTotal").html(total.toFixed(2));
+    } else {
+        $("#botonFinalizar").prop("disabled", true);
+    }
+}
+
+function finalizar() {
+    $("#successModal").modal({
+        fadeDuration: 1000,
+        fadeDelay: 0.50,
+        escapeClose: false,
+        clickClose: false
+    });
 }
 
 $(document).ready(function () {
