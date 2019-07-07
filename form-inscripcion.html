@@ -9,12 +9,12 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/header.js"></script>
-
+    <script src="js/form-inscripcion.js"></script>
     <link rel="stylesheet" href="estilos/pages/form-inscripcion.css">
 </head>
 
 <body>
-     <header>
+    <header>
         <div class="flex wrap">
             <div class="flex mw-100 dw-33 center middle brand">
                 <a href="index.html">
@@ -51,71 +51,41 @@
             <h1 class="title">Cena con Show Privado</h1>
             <article>
                 <h2>Inscripción</h2>
-                <form action="*" class="flex row between wrap">
-                    <div class="form-element">
-                        <label class="form-label">Nombre:</label>
-                        <input type="text" class="form-input" name="nombre" placeholder="Ingrese nombre" required>
-                    </div>
-                    <div class="form-element">
-                        <label class="form-label">Apellido:</label>
-                        <input type="text" class="form-input" name="apellido" placeholder="Ingrese apellido" required>
-                    </div>
-                    <div class="form-element">
-                        <label class="form-label">Documento:</label>
-                        <input type="text" class="form-input" name="dni" placeholder="Ingrese DNI" required>
-                    </div>
-                    <div class="flex middle">
-                        <a href="#">
-                            <i class="fa fa-minus-circle fa-2x"></i>
-                        </a>
-                    </div>
-                </form>
-                <form action="*" class="flex row between wrap">
-                    <div class="form-element">
-                        <label class="form-label">Nombre:</label>
-                        <input type="text" class="form-input" name="nombre" placeholder="Ingrese nombre" required>
-                    </div>
-                    <div class="form-element">
-                        <label class="form-label">Apellido:</label>
-                        <input type="text" class="form-input" name="apellido" placeholder="Ingrese apellido" required>
-                    </div>
-                    <div class="form-element">
-                        <label class="form-label">Documento:</label>
-                        <input type="text" class="form-input" name="dni" placeholder="Ingrese DNI" required>
-                    </div>
-                    <div class="flex middle">
-                        <a href="#">
-                            <i class="fa fa-minus-circle fa-2x"></i>
-                        </a>
+                <form action="*" id="formulario" class="flex column between wrap">
+                    <div class="flex between wrap form-group-row">
+                        <div class="form-element">
+                            <label class="form-label">Nombre:</label>
+                            <input type="text" class="form-input nombre" name="nombre[]" placeholder="Ingrese nombre"
+                                required>
+                        </div>
+                        <div class="form-element">
+                            <label class="form-label">Apellido:</label>
+                            <input type="text" class="form-input apellido" name="apellido[]"
+                                placeholder="Ingrese apellido" required>
+                        </div>
+                        <div class="form-element">
+                            <label class="form-label">Documento:</label>
+                            <input type="text" class="form-input dni" name="dni[]" placeholder="Ingrese DNI" required>
+                        </div>
+                        <div class="form-element">
+                            <label class="form-label">Importe:</label>
+                            <input type="number" class="form-input importe" name="importe[]"
+                                placeholder="Ingrese Importe" required>
+                        </div>
+                        <div class="flex middle">
+                            <a href="#" class="minus-icon eliminar" title="Eliminar">
+                                <i class="fa fa-minus-circle fa-2x"></i>
+                            </a>
+                        </div>
                     </div>
                 </form>
-                <form action="*" class="flex row between wrap">
-                    <div class="form-element">
-                        <label class="form-label">Nombre:</label>
-                        <input type="text" class="form-input" name="nombre" placeholder="Ingrese nombre" required>
-                    </div>
-                    <div class="form-element">
-                        <label class="form-label">Apellido:</label>
-                        <input type="text" class="form-input" name="apellido" placeholder="Ingrese apellido" required>
-                    </div>
-                    <div class="form-element">
-                        <label class="form-label">Documento:</label>
-                        <input type="text" class="form-input" name="dni" placeholder="Ingrese DNI" required>
-                    </div>
-                    <div class="flex middle">
-                        <a href="#">
-                            <i class="fa fa-minus-circle fa-2x"></i>
-                        </a>
-                    </div>
-                </form>
-                <div class="flex middle margin">
-                    <a href="#">
+                <div class="flex mt-3 add-person">
+                    <button class="btn-primary m-block" onclick="agregarPersona()">
                         <i class="fa fa-plus-circle"></i> Agregar Persona
-                    </a>
+                    </button>
                 </div>
-
-                <div class="flex middle margin">
-                    <span class="black-box">$000.-</span>
+                <div class="flex middle mt-3">
+                    <span class="black-box">$ <span id="total">000.-</span></span>
                     <a href="resumen-entradas.html" class="btn-primary">INSCRIBIRSE</a>
                 </div>
             </article>

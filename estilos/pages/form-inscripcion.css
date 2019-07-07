@@ -3,7 +3,6 @@
 @import "../common/header.css";
 @import "../common/footer.css";
 
-
 .black-box {
   border: 0.5em solid black;
   background-color: black;
@@ -11,6 +10,29 @@
   margin-right: 1em;
 }
 
-.title{
+.title {
   font-size: 2em;
+}
+
+.form-group-row {
+  width: 100%;
+  flex-direction: column;
+}
+
+.minus-icon {
+  margin-top: 1em;
+}
+
+.add-person{
+  justify-content: center;
+}
+
+@media screen and (min-width: 47em) {
+  .form-group-row {    
+    flex-direction: row;
+  }
+
+  .add-person{
+    justify-content: flex-start;
+  }
 }
