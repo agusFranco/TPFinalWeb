@@ -8,13 +8,15 @@
     <title>Contacto</title>
 
     <script src="js/jquery.js"></script>
+    <script src="js/jquery_validate.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/contacto.js"></script>
 
     <link rel="stylesheet" href="estilos/pages/contacto.css">
 </head>
 
 <body>
-     <header>
+    <header>
         <div class="flex wrap">
             <div class="flex mw-100 dw-33 center middle brand">
                 <a href="index.html">
@@ -50,32 +52,37 @@
         <section class="flex row wrap p-3 mb-2">
             <article class="flex column mw-100 dw-50 mb-2">
                 <h1 class="contact-title">CONTACTO</h1>
-                <form action="*">
+                <form id="form" action="mailto:francoagustinfacundo@gmail.com" method="post" enctype="text/plain">
                     <div class="form-element">
                         <label class="form-label">Nombre y Apellido:</label>
-                        <input type="text" class="form-input" name="nom_ap" placeholder="Ingrese nombre y apellido"
-                            required>
+                        <input type="text" class="form-input" name="nombre" placeholder="Ingrese nombre y apellido">
                     </div>
                     <div class="form-element">
                         <label class="form-label">Correo Electronico:</label>
-                        <input type="text" class="form-input" name="email" placeholder="Ingrese su email" required>
+                        <input type="text" class="form-input" name="email" placeholder="Ingrese su email">
                     </div>
 
                     <div class="form-element">
                         <label class="form-label">Telefono:</label>
-                        <input type="tel" class="form-input" name="phone" placeholder="Ingrese su Telefono (opcional)">
+                        <input type="tel" class="form-input" name="telefono" placeholder="Ingrese su Telefono (opcional)">
                     </div>
 
                     <div class="form-element">
-                        <label class="form-label">Consulta:</label>
-                        <textarea name="consulta" class="form-textarea" rows="15" placeholder="Deje su consulta"
-                            required></textarea>
+                        <label class="form-label">Consulta: (Caracteres pendientes: <span id="caracteresPendientes">1000</span>)</label>
+                        <textarea id="consulta" name="consulta" class="form-textarea" rows="15" maxlength="1000"
+                            placeholder="Deje su consulta"></textarea>
                     </div>
 
                     <div class="flex right">
-                        <button class="btn-primary">
+                        <button type="submit" class="btn-primary m-block">
                             ENVIAR
                         </button>
+                    </div>
+
+                    <div class="flex center mt-1">
+                        <div id="processing" class="processing oculto">
+                            <p>Enviando el formulario, por favor espere...</p>
+                        </div>
                     </div>
                 </form>
             </article>

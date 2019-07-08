@@ -123,6 +123,27 @@ hr {
   text-align: right;
 }
 
+input.error,
+textarea.error {
+  border: 1px solid crimson;
+}
+
+label.error {
+  width: 100%;
+  display: block;
+  padding: 0.3em;
+  box-sizing: border-box;
+  font-size: 0.7em;
+}
+
+.error {
+  color: crimson;
+}
+
+.oculto {
+  display: none;
+}
+
 @media screen and (max-width: 47em) {
   .m-block {
     width: 100%;
