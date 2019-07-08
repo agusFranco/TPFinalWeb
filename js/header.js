@@ -33,10 +33,8 @@ function configureMenuVisibility() {
     });
 }
 
-function initializeHeader() {
-    
+function initializeHeader() {    
     configureMenuVisibility();
-
     $("#cart-counter").html(getTicketCount());
 }
 

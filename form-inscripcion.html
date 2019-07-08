@@ -8,6 +8,7 @@
     <title>Formulario de Inscripcion</title>
 
     <script src="js/jquery.js"></script>
+    <script src="js/jquery-modal.js"></script>
     <script src="js/header.js"></script>
     <script src="js/form-inscripcion.js"></script>
     <link rel="stylesheet" href="estilos/pages/form-inscripcion.css">
@@ -79,17 +80,29 @@
                         </div>
                     </div>
                 </form>
-                <div class="flex mt-3 add-person">
+                <div class="flex mt-1 add-person">
                     <button class="btn-primary m-block" onclick="agregarPersona()">
                         <i class="fa fa-plus-circle"></i> Agregar Persona
                     </button>
                 </div>
-                <div class="flex middle mt-3">
-                    <span class="black-box">$ <span id="total">000.-</span></span>
-                    <a href="resumen-entradas.html" class="btn-primary">INSCRIBIRSE</a>
+                <div class="flex total-section mt-1">
+                    <div class="flex center">
+                        <span class="black-box">$ <span id="total">0.00</span>.-</span>
+                    </div>
+                    <div class="flex center subscribe-button">
+                        <button class="btn-primary m-block" onclick="inscribirse()">INSCRIBIRSE</button>
+                    </div>
                 </div>
             </article>
         </section>
+        <div id="successModal" class="modal">
+            <h3>Gracias por Inscribirse!!</h3>
+            <div id="summary" class="flex column mt-2">
+            </div>
+            <div class="flex start mt-3">
+                <a href="#" class="btn-finish m-block" rel="modal:close">Entendido!</a>
+            </div>
+        </div>
     </main>
     <footer>
         <section class="flex row wrap center footer-container">
